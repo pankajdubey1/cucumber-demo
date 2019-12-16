@@ -1,0 +1,20 @@
+{
+	"steps": [
+		{
+			"url": "/tasks",
+			"operation": "POST",
+			"payload": {
+				"description": "firsttask"
+			},
+			"assertions": {
+				"status": 201,
+				"jsontoverify": {
+					"taskId": "not Empty"
+				},
+				"fieldoccurence": {
+					"token": 1
+				}
+			}
+		}
+	]
+}
